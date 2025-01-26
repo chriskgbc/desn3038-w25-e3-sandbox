@@ -14,11 +14,8 @@ export default function DashboardLayout({
     const pathname = usePathname();
 
     const nav = [
-        "authors",
-        "books",
-        "users",
-        "rentals"
-        // ADD MORE TABS HERE
+        "search",
+        "user",
     ];
 
     return (
@@ -27,7 +24,7 @@ export default function DashboardLayout({
 
                 <div className="container my-5">
 
-                    <h1>📚 GBC Library</h1>
+                    <h1>🖼️ GBC Photo Search</h1>
 
                     <ul className="nav nav-pills mb-3">
                         {nav.map((o,i) => {
